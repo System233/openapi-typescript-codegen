@@ -1,7 +1,14 @@
 # Important announcement
 
 > [!IMPORTANT] 
-> Please migrate your projects to use [@hey-api/openapi-ts](https://github.com/hey-api/openapi-ts)
+> 
+> * openapi-typescript 生成巨型schema，不是AI和编辑器友好的。
+> * openai-fetch 纯类型请求库，需要内嵌schema，毫无安全性可言。
+> * hey-api/openapi-ts 生成巨型schema，且混淆的runtime，危险。
+> * openapi-typescript-codegen 不支持定制化的client/runtime，不支持中间件，设计理念落后。
+
+> [!CAUTION] 
+> ~~ Please migrate your projects to use [@hey-api/openapi-ts](https://github.com/hey-api/openapi-ts) ~~
 
 Due to time limitations on my end, this project has been unmaintained for a while now. The `@hey-api/openapi-ts`
 project started as a fork with the goal to resolve the most pressing issues. going forward they are planning to
